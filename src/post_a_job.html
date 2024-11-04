@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <title>Create Job Listing</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="bg-indigo-50">
+    <nav id="nav-bar" class='bg-indigo-50'>
+
+    </nav>
+    <div class="w-[60%] mt-[30px] mx-auto bg-white p-8 rounded-lg shadow-md">
+        <h1 class="text-xl font-bold mb-6">Post a Job</h1>
+           <form id='post_job_form' onsubmit='post_job(event)'>  
+            <div class="mb-4">
+                <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+                <input type="text" id="title" name="title" class="block w-full p-2 border border-gray-300 rounded mt-1" required>
+            </div>
+            <div class="mb-4">
+                <label for="discriptions" class="block text-sm font-medium text-gray-700">Descriptions</label>
+                <textarea id="discriptions" name="discriptions" class="block w-full p-2 border border-gray-300 rounded mt-1" rows="4" required></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="requirements" class="block text-sm font-medium text-gray-700">Requirements</label>
+                <textarea id="requirements" name="requirements" class="block w-full p-2 border border-gray-300 rounded mt-1" rows="4" required></textarea>
+            </div>
+            <div class="mb-4">
+                <label for="location" class="block text-sm font-medium text-gray-700">Location</label>
+                <input type="text" id="location" name="location" class="block w-full p-2 border border-gray-300 rounded mt-1" required>
+            </div>
+            <div class="mb-4">
+                <label for="job_type" class="block text-sm font-medium text-gray-700">Job Type</label>
+                <select id="job_type" name="job_type" class="block w-full p-2 border border-gray-300 rounded mt-1">
+                    <option value="Privet" selected>Private</option>
+                    <option value="Government">Public</option>
+                    <option value="Semi-Government">Semi-Public</option>
+                    <!-- Add other job types as needed -->
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="time" class="block text-sm font-medium text-gray-700">Time</label>
+                <select id="time" name="time" class="block w-full p-2 border border-gray-300 rounded mt-1">
+                    <option value="Full-Time">Full-Time</option>
+                    <option value="Half-time">Part-Time</option>
+                    <!-- Add other time options as needed -->
+                </select>
+            </div>
+            <div>
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded hover:bg-blue-500">Submit</button>
+            </div>
+        </form>
+        
+    </div>
+    <div id='footer' class="footer-section mt-[40vh]">
+        
+    </div>
+    <script src='./js/post_a_job.js'></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/auth.js"></script>
+</body>
+</html>

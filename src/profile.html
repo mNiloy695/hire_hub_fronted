@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class='bg-indigo-200'>
+    <header>
+        <nav id="nav-bar" class='bg-indigo-50'>
+
+        </nav>
+        
+    </header>
+    <main>
+        <h1 class='text-bold text-center m-2 md:text-2xl mb-5 font-bold'>Profile</h1>
+        <div class="profile-section flex-col flex md:flex-row w-[80%] h-full mx-auto items-center justify-center md:gap-[70px]">
+            
+            <div class='md:basis-[30%] basis-[20%] mb-[10px]'>
+                <img class='md:size-[300px] size-[200px]' src="./images/avater.png" alt="">
+            </div>
+            <div>
+               
+                <form id='profile_form'  onsubmit='profile(event)'>
+                   
+                   <div class="flex   items-center">
+                
+                    <input class="p-2 rounded-md  ms-2 grow shadow-sm" type="text" name='username' id="username" placeholder="Enter your username">
+                   </div>
+                    
+                    <div class="flex flex-col md:flex-row mt-2">
+                       <div class='flex items-center'>
+                       
+                        <input type="text" class='m-2 rounded-md  p-2 shadow-sm' name='f_name' id='f_name' class='p-2 shadow-sm grow md:grow-0' placeholder="Enter the first name">
+                       </div>
+                      <div  class="flex items-center ">
+                       
+                        <input  class='p-2 m-2  rounded-md   shadow-sm' type="text" name='l_name' id='l_name'  placeholder="Enter the last name">
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                   
+                    <input class='m-2 grow required rounded-md  p-5 shadow-sm' type="email" id='email' name='email' placeholder="Enter your email">
+                    
+                    </div>
+                        <div class="flex items-center">
+                           
+                               <select  class='m-2 grow rounded-md   p-5 shadow-sm'  name="company" id="company">
+                               
+                                
+                               </select>
+                            </div>
+                   
+                    <button type='submit' class='bg-blue-600 my-3  ms-2 rounded-lg text-bold p-[10px_20px]'>Change</button>
+                   
+                </form>
+            </div>
+        </div>
+        <div id='footer' class="footer-section">
+        
+        </div>
+    </main>
+    <script src='./js/auth.js'></script>
+    <script src='./js/profile.js'></script>
+    <script src="./js/navbar.js"></script>
+</body>
+</html>

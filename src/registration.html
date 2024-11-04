@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav id="nav-bar" class='bg-indigo-50'>
+
+        </nav>
+        <div class='registration-section mt-[30px] gap-[20px] flex justify-center items-center flex-col md:flex-row m-4'>
+            <div class="basis-[40%]">
+                <img src="./images/registration.jpeg" alt="">
+            </div>
+            <div>
+                <form id='registration_form' onsubmit='Registration(event)'>
+                    <h1 class=' text-3xl md:text-5xl mb-5 font-bold'>Register Now</h1>
+                    <span class='justify-self-center p-3 text-red-600 text-bold' id='err'></span>
+                   <div class="flex  items-center">
+                    <i class="fa-solid fa-user"></i>
+                    <input class="p-2 ms-2 grow shadow-md" type="text" name='username' id="username" placeholder="Enter your username">
+                   </div>
+                    
+                    <div class="flex flex-col md:flex-row mt-2">
+                       <div class='flex items-center'>
+                        <i class="fa-solid fa-file-signature"></i>
+                        <input type="text" class='m-2  p-2 shadow-md' name='f_name' id='f_name' class='p-2 shadow-md grow md:grow-0' placeholder="Enter the first name">
+                       </div>
+                      <div  class="flex items-center ">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <input  class='p-2 m-2   shadow-md' type="text" name='l_name' id='l_name'  placeholder="Enter the last name">
+                      </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-envelope"></i>
+                    <input class='m-2 grow  p-5 shadow-md' type="email" id='email' name='email' required placeholder="Enter your email">
+                    
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-circle-info"></i>
+                           <select  class='m-2 grow  p-5 shadow-md'  name="type" id="type">
+                            <option value="Viewer">--------</option>
+                            <option value="Job Seeker">Job Seeker</option>
+                            <option value="Employee">Employee</option>
+                           </select>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-house"></i>
+                               <select  class='m-2 grow  p-5 shadow-md'  name="company" id="company">
+                                <option value=null>None</option>
+                                
+                               </select>
+                            </div>
+                    <div class='flex er flex-col md:flex-row'>
+                     <div class='flex items-center'>
+                        <i class="fa-solid fa-lock"></i>
+                        <input class='p-2  grow  m-2 shadow-md' type="password" name="password" required id="password" placeholder="Enter the Password">
+                     </div>
+                    <div class='flex  items-center'>
+                        <i class="fa-solid fa-lock"></i>
+                        <input class="p-2 grow m-2 shadow-md" type="password" name='confirm_password' required id='confirm_password' placeholder="Enter Confirm Password">
+                    </div>
+                    </div>
+                    <button type='submit' class='bg-yellow-300 my-3 rounded-lg text-bold p-[10px_20px]'>Register</button>
+                   
+                </form>
+            </div>
+        </div>
+
+    </header>
+    <div id='footer' class="footer-section">
+        
+    </div>
+    <script src='./js/auth.js'></script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/company.js"></script>
+</body>
+</html>

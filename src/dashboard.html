@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class='bg-indigo-400'>
+    <header>
+        <nav id="nav-bar" class='bg-indigo-50'>
+
+        </nav>
+    </header>
+    <main >
+     <div class="flex flex-col  md:flex-row">
+
+        <div class='mt-2 w-[100%] md:w-[30%] '>
+            <ul  id="dashboard" class="bg-white rounded-lg shadow-md   p-5 text-center md:text-start md:h-[85vh] w-[100%]  md:w-[100%] flex flex-col gap-[20px]">
+                <li><i class="fa-solid fa-user-secret m-2"></i><a href="./manage_user.html">Manage User</a></li>
+                <li><i class="fa-solid fa-list-check m-2"></i><a href="./manage_job.html">Manage Job</a></li>
+                
+                <li><i class="fa-thin fa-plus m-2"></i><a href="./manage_company.html">ADD Company</a></li>
+            </ul>
+        </div>
+        <div class='w-full justify-items-center grid grid-cols-1 md:grid-cols-3 gap-6 p-6 '>
+            <div class='shadow-md rounded-lg bg-white flex flex-col justify-center items-center h-[250px] w-[250px]'>
+                <h1 class='text-2xl font-bold'>Daily Viewer</h1>
+                <p class='text-2xl font-bold'>20000+</p>
+            </div>
+            <div class='shadow-md rounded-lg bg-white flex flex-col justify-center items-center  h-[250px] w-[250px]'>
+                <h1 class='text-2xl font-bold'>Total User</h1>
+                <p class='text-2xl font-bold'>10000+</p>
+            </div>
+            <div class='shadow-md rounded-lg bg-white flex flex-col justify-center items-center h h-[250px] w-[250px]'>
+                <h1 class='text-2xl font-bold'>Total Company</h1>
+                <p class='text-2xl font-bold'>1200+</p>
+            </div>
+            <div class='shadow-md rounded-lg bg-white flex flex-col justify-center items-center  h-[250px] w-[250px]'>
+                <h1 class='text-2xl font-bold'>Total Job</h1>
+                <p class='text-2xl font-bold'>100000+</p>
+            </div>
+            <div class='shadow-md rounded-lg bg-white flex flex-col justify-center items-center h-[250px] w-[250px]'>
+                <h1 class='text-2xl font-bold'>Success Rate</h1>
+                <p class='text-2xl font-bold'>50000+</p>
+            </div>
+            <div class='shadow-md rounded-lg bg-white flex flex-col justify-center items-center h-[250px] w-[250px]'>
+                <h1 class='text-2xl font-bold'>Daily Application</h1>
+                <p class='text-2xl font-bold'>30000+</p>
+            </div>
+        </div>
+        
+     </div>
+
+    </main>
+    <div id='footer' class="mt-[30vh] footer-section">
+        
+    </div>
+</body>
+<script src="./js/navbar.js"></script>
+<script src="./js/manage_user.js"></script>
+<script src="./js/auth.js"></script>
+</html>

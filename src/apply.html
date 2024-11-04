@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class='bg-indigo-50'>
+  <nav id="nav-bar" class='bg-indigo-50'>
+
+  </nav>
+  <div class="apply-section  h-[60vh] flex justify-center items-center">
+    <p id='er'></p>
+    <form action="" class='shadow-lg bg-white p-[80px] rounded-lg' id='apply-form' onsubmit='handle_apply_for_job(event)' enctype="multipart/form-data">
+         <label for="file" class='ms-2 font-bold'>Upload Resume : </label>
+        <input class='ms-2' id='file' type="file" name='file' placeholder='Enter Your Resume'><br>
+        <button class='p-[10px_25px] m-2 rounded-lg bg-slate-600' >Submit</button>
+    </form>
+  </div>
+
+  <div id='footer' class="footer-section">
+        
+  </div>
+    <script src='./js/apply_for_job.js'></script>
+  <script src="./js/navbar.js"></script>
+  <script src="./js/auth.js"></script>
+</body>
+</html>
