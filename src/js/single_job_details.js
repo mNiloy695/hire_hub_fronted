@@ -40,9 +40,9 @@ const single_job_detals=async()=>{
           `
           
           req_des.innerHTML=`
-           <div class='shadow-md  md:w-[80%] w-[90%] m-2 p-3  mx-auto  rounded-lg   bg-white '>
-           <p><h1 class="font-bold"><i class="fa-solid m-2 fa-box"></i> Description</h1>  ${job.discriptions}</p>
-                <p><h1 class="font-bold"><i class="fa-solid m-2 fa-info "></i>Requrements</h1> ${job.requirements}</p>
+           <div class='shadow-md  text-wrap overflow-hidden  md:w-[80%] w-[100%] m-2 p-3  mx-auto  rounded-lg   bg-white '>
+           <p class='text-wrap'><h1 class="font-bold"><i class="fa-solid m-2 p-2 fa-box overflow-hidden"></i> Description</h1>  ${job.discriptions}</p>
+                <p class='text-wrap overflow-hidden p-2'><h1 class="font-bold"><i class="fa-solid m-2 fa-info "></i>Requrements</h1> ${job.requirements}</p>
                 <button class='rounded-lg px-4 py-2 mt-3 text-center outline outline-offset-0 outline-1 hover:outline-blue-800  hover:bg-blue-400 font-bold bg-gray-300'  onclick='apply_for_job(${job.id})'>Aplly Now</button>
                 </div>
             
