@@ -7,16 +7,23 @@
     <link href="./output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
-<body class='bg-white'>
-    <header>
-        <nav id="nav-bar" class='bg-indigo-50'></nav>
-        <div id="banner-section" class="banner-section justify-center mx-[20px] mt-[20px] md:h-[500px] md:mx-[50px] flex flex-col-reverse md:flex-row items-center   rounded-lg p-6 shadow-md bg-[url('./images/bg.jpg')]  bg-cover bg-center">
-            <h1 class='text-[35px] md:text-[40px] mt-[40px] text-center text-medium basis-[50%] md:leading-[70px]'><span class='text-[100px]'>F</span>IND <span class='bg-yellow-200 font-semibold  p-2'>YOUR DREAM</span> <br><span class='font-semibold text-red-600'>JOB</span> <span class='font-bold'><span class='text-[60px]'>N</span>OW</span></h1>
-            <div class='md:mt-[95px]'>
-                <img class='md:size-[100%] justify-self-center rounded-lg' src="./images/job1.jpg" alt="no image">
-            </div>
+<body class='bg-white   relative '>
+    
+        <nav id="nav-bar" class='bg-indigo-50  sticky top-0 z-50'></nav>
+        <div id="banner-section" class="banner-section justify-center  mt-[10px] md:h-[500px]  relative  flex flex-col-reverse md:flex-row items-center   rounded-lg p-6 shadow-md bg-[url('./images/bann.webp')]  bg-cover bg-center">
+             
+                <div class='absolute inset-0 bg-gradient-to-t from-transparent via-black to-black opacity-60'>
+                 <h1 class='text-4xl text-white font-bold justify-center mx-auto h-full flex flex-col items-center w-[80%]'>
+                   
+
+                       "Discover top jobs and connect with great talent. <br> Your next opportunity or hire is just a click away!"
+                       <button class='py-2 text-xl text-black text-normal px-3 m-8 bg-green-400 '><a href="./find.html">Find Job</a></button>
+                 </h1>
+                
+                </div>
+             
         </div>
-    </header>
+   
     <main>
         <h1 class='text-center m-5 text-2xl font-mono'>LEATEST JOBS</h1>
         <div class="job-section flex md:flex-row justify-center"> <!-- Centered flex container -->
@@ -25,7 +32,7 @@
                     
                     <div class="flex md:gap-[60px] gap-[10px] flex-col  md:flex-row justify-center"> <!-- Flexbox for dropdowns -->
                         <div>
-                            <button type="button" class='font-semibold outline outline-gray-500 bg-slate-300 hover:bg-slate-500 outline-1 p-2 rounded-md' onclick="toggleDropdown()">Sort By Company</button>
+                            <button type="button" class='font-mono  bg-green-500 outline-1 p-2 rounded-md' onclick="toggleDropdown()">Sort By Company</button>
                             <div id="dropdown" class="w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
                                 <ul id='company-filter' class='py-1' role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <li class='hover:cursor-pointer' onclick="filter_all_job()">
@@ -36,7 +43,7 @@
                             </div>
                         </div>
                         <div>
-                            <button type="button" class='font-semibold outline outline-gray-400 outline-1  bg-slate-300  hover:bg-slate-500 p-2 rounded-md' onclick="toggleDropdown2()">Sort By Time</button>
+                            <button type="button" class='font-mono  bg-green-500 p-2 rounded-md' onclick="toggleDropdown2()">Sort By Time</button>
                             <div id="dropdown2" class="w-full rounded-md p-4 shadow-lg bg-white ring-1 ring-black ring-opacity-5 hidden">
                                 <ul id='time-filter' class='py-1' role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                     <li class='hover:cursor-pointer' onclick="filter_all_job_by_time()"><i class="fa-solid fa-circle text-[6px] m-1"></i> All</li>
@@ -60,21 +67,21 @@
        
         <div class="top-sector flex flex-wrap justify-center pb-5  md:flex-row md:justify-between w-[90%] mx-auto mt-[30px]">
              
-              <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
+              <div class='shadow-md  rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
                 
-                <i class="fa-solid fa-car md:text-4xl"></i>
+                <i class="fa-solid text-green-600 fa-car md:text-4xl"></i>
                 <h1 class='font-semibold md:text-2xl '>Automation</h1>
               </div>
               <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
-                <i class="fa-solid fa-lock md:text-4xl"></i>
+                <i class="text-green-600 fa-solid fa-lock md:text-4xl"></i>
                 <h1 class='font-semibold md:text-2xl '>Security</h1>
               </div>
               <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
-                <i class="fa-brands fa-paypal md:text-4xl"></i>
+                <i class="text-green-600 fa-brands fa-paypal md:text-4xl"></i>
                 <h1 class='font-semibold md:text-xl '>Paypel</h1>
               </div>
               <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
-                <i class="fa-solid fa-plane md:text-4xl"></i>
+                <i class="text-green-600 fa-solid fa-plane md:text-4xl"></i>
                 <h1 class='font-semibold md:text-2xl '>fly</h1>
               </div>
              
@@ -83,19 +90,19 @@
             
             <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
               
-                <i class="fa-brands fa-wix md:text-4xl"></i>
+                <i class="text-green-600 fa-brands fa-wix md:text-4xl"></i>
               <h1 class='font-semibold md:text-2xl '>Wix</h1>
             </div>
             <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
-                <i class="fa-solid fa-street-view md:text-4xl"></i>
+                <i class="text-green-600 fa-solid fa-street-view md:text-4xl"></i>
               <h1 class='font-semibold md:text-2xl '>Health</h1>
             </div>
             <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
-                <i class="fa-solid fa-fish text-4xl"></i>
+                <i class="text-green-600 fa-solid fa-fish text-4xl"></i>
               <h1 class='font-semibold md:text-xl '>Fishing</h1>
             </div>
             <div class='shadow-md rounded-lg  bg-white h-[150px] w-[150px] flex flex-col m-2 justify-center items-center'>
-                <i class="fa-solid fa-palette md:text-4xl"></i>
+                <i class="text-green-600 fa-solid fa-palette md:text-4xl"></i>
               <h1 class='font-semibold md:text-2xl '>Paint</h1>
             </div>
            
