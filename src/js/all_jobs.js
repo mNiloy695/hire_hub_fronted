@@ -14,14 +14,14 @@ const load_all_job=async()=>{
     }
     all_job.innerHTML+=`
     <div class='flex flex-col m-2'>
-            <div class='shadow-md flex  flex-col md:flex-row md:w-[80%] w-[90%] p-5  mx-auto gap-[20px] items-center rounded-lg   bg-white leading-6'>
+            <div class='shadow-md flex  bg-white flex-col md:flex-row md:w-[80%] w-[90%] p-5  mx-auto gap-[20px] items-center rounded-lg   leading-6'>
                 <img class='rounded-[10px] size-[120px]' src="${logo}" alt="">
                 <div class='flex m-4 md:flex-row flex-col w-[100%] justify-between'>
                 <div>
                 
                 <h1 class='font-semibold text-xl md:text-2xl'>${job.title}</h1>
                 <p class='font-sans'><h1 class=" font-semibold"><i class=" text-green-600 fa-solid m-1 fa-box"></i> Description</h1>  ${job.discriptions.substring(0, 40)}</p>
-                <p><h1 class="font-semibold"><i class=" text-green-600 fa-solid m-1 fa-info"></i>Requrements</h1> ${job.requirements.substring(0, 40)}</p>
+                <p><h1 class="font-semibold"><i class=" text-green-600 fa-solid m-2 fa-info"></i>Requrements</h1> ${job.requirements.substring(0, 40)}</p>
                 </div>
               <div>
                 <p ><h1 class="font-semibold"><i class="fa-solid fa-location-dot m-1  text-green-600"></i> Location</h1> ${job.location}</p>

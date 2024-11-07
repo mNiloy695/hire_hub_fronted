@@ -14,8 +14,8 @@ fetch("navbar.html")
     if(token==undefined){
         
         auth_bar.innerHTML=`
-                <li><a class='text-green-500' href="./login.html">Login</a></li>
-                <li><a class='text-red-500' href="./registration.html">Sign Up</a></li>
+                <li><a class='text-green-500  hover:to-blue-500 font-bold' href="./login.html">Login</a></li>
+                <li><a class='text-red-500  font-bold' href="./registration.html">Sign Up</a></li>
         `
       
     
@@ -25,13 +25,13 @@ fetch("navbar.html")
         if(type=='admin')
         {
             auth_bar.innerHTML=`
-            <li class='me-2'><a href="./dashboard.html">Dashboard</a></li>
+            <li class='me-2'><a href="./dashboard.html" class='font-bold text-green-600'>Dashboard</a></li>
             <li onclick='logout()' class='hover:cursor-pointer'>Logout</li> 
         `
         }
         else{
             auth_bar.innerHTML=`
-            <li class='me-2'> <a class='text-green-600' href='./profile.html'><i class="fa-solid fa-user me-2 text-sm"></i>profile</a></li>
+            <li class='me-2'> <a class='text-green-600 font-bold' href='./profile.html'><i class="fa-solid fa-user me-2 text-sm"></i>profile</a></li>
             <li onclick='logout()' class='hover:cursor-pointer text-red-600'>Logout</li> 
           `
         }
@@ -40,7 +40,7 @@ fetch("navbar.html")
     console.log(is_staff)
     if(type=='Employee'){
         menu.innerHTML=`
-        <li><a href="./index.html" class='text-green-600'>Home</a></li>
+        <li><a href="./index.html" class='text-green-600 font-bold'>Home</a></li>
         <li><a href='./about.html'>About</a></li>
         <li><a href="./post_a_job.html">Create_Job</a></li>
         <li><a href="./posted_job.html">Created_Job</a></li>
@@ -50,7 +50,7 @@ fetch("navbar.html")
     }
     else if(type!='admin'){
         menu.innerHTML=`
-        <li><a class='text-green-500' href="./index.html">Home</a></li>
+        <li><a class='text-green-500 font-bold' href="./index.html">Home</a></li>
         <li><a href='./about.html'>About</a></li>
         <li><a href="./find.html">Find Job</a></li>
         
