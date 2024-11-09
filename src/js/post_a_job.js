@@ -4,15 +4,16 @@ const post_job=async(event)=>{
     const formData=new FormData(form)
     const token=localStorage.getItem('token')
     const user=localStorage.getItem('id')
-    const selected_company_promise=await fetch(`https://hire-hub-bsf2.vercel.app/job/companies/1/`)
+    const selected_company_promise=await fetch(`https://hire-hub-bsf2.vercel.app/account/${user}/`)
     const job_type=document.getElementById('job_type').value
     const time=document.getElementById('time').value
     const cmp=await selected_company_promise.json()
     console.log(cmp)
+    console.log(cmp)
     const job={
         user:parseInt(user),
         title:formData.get('title'),
-        company_name:cmp.id,
+        company_name:cmp.company,
         discriptions:formData.get('discriptions'),
         requirements:formData.get('requirements'),
         location:formData.get('location'),
